@@ -10,7 +10,8 @@ Description:
 #include <algorithm>
 #include "deck.h"
 
-static bool IsCardInDeck(const std::vector<Card>&, Card);
+
+static bool IsCardInDeck(const std::vector<Card>&, const Card);
 
 Deck::Deck() : cards() {
     int deckSize = Card::maxNum * Card::numOfSuits;
@@ -30,15 +31,13 @@ Deck::Deck() : cards() {
 }
 
 Card Deck::GetCard() {
-    if (!cards.empty()) {
-        Card card = cards.front();
-        cards.erase(cards.begin());
-        return card;
-    }
-    else {
-        // TODO: Should be some way to handle if `Deck` is empty.
-    }
-    
+    Card card = this->cards.front();
+    cards.erase(cards.begin());
+    return card;
+}
+
+bool Deck::IsEmpty() {
+    return this->cards.empty();
 }
 
 static bool IsCardInDeck(const std::vector<Card>& cards, const Card card) {

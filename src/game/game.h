@@ -18,7 +18,7 @@ Description:
 class Game {
     public:
         Game(Deck deck, std::vector<std::string> playerNames);
-        void Play(int cardAmount);
+        void Play(int handSize);
         void ShowHands();
         void DeclareWinner();
 

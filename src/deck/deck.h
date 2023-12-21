@@ -17,6 +17,7 @@ class Deck {
     public:
         Deck();
         Card GetCard();
+        bool IsEmpty();
 
     private:
         std::vector<Card> cards;

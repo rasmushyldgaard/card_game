@@ -15,15 +15,14 @@ Description:
 
 int main() {
     Deck deck;
-    int numOfCards = 5;
+    int handSize = 5;
     std::vector<std::string> playerNames;
     playerNames.push_back("Steven");
     playerNames.push_back("Bob");
     playerNames.push_back("Melissa");
     
-    Player winner("");
     Game game(deck, playerNames);
-    game.Play(numOfCards);
+    game.Play(handSize);
     game.ShowHands();
     game.DeclareWinner();
 

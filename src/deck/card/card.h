@@ -9,6 +9,8 @@ Description:
 #ifndef __CARD__
 #define __CARD__
 
+#include <string>
+
 
 class Card {
     public:
@@ -26,6 +28,8 @@ class Card {
         Card(int number, Suit suit);
         int GetNumber(void);
         Suit GetSuit(void);
+        int GetValue(void);
+        std::string ToString();
         bool operator==(const Card& other) const;
 
     private:
