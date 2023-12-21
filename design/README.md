@@ -1,5 +1,6 @@
 ## Design
 ![class_diagram](./class_diagram.png)
+<br>
 Game implements Deck and Player. Game acts as the running environment. Game runs three methods sequentially:
 1. Play() - plays the Game, *handSize* determine amount of cards dealt to players.
 2. ShowHands() - after cards have been dealt, every player show their hands and Game announces their results.

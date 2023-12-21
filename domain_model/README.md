@@ -8,7 +8,7 @@
 * Every `Player` has <u>many</u> `Card` (*One-To-Many Relation*)
 
 #### Behavior of each class
-Use Case diagram for different use case interactions between `Game` and `Player`. These use cases should apply to every `Player`in a `Game` of *N* `Player` objects.
+Use Case diagram for different use case interactions between `Game` and `Player`. These use cases should apply to every `Player`in a `Game` of *N* `Player` objects.<br>
 ![game_use_case](./game_use_case.png)
 
 **Game**
